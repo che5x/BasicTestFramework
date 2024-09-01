@@ -1,0 +1,26 @@
+2024-09-01 23:06:28,321 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\91865\eclipse-workspace\Temelio\testng.xml
+
+2024-09-01 23:06:50,380 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\91865\eclipse-workspace\Temelio\testng.xml
+
+2024-09-01 23:07:00,305 INFO t.TC02_AddTeamMember [main] **** 2nd TestCase Started ****
+2024-09-01 23:07:10,901 INFO t.TC02_AddTeamMember [main] adding details of Member:
+2024-09-01 23:07:12,966 INFO t.TC02_AddTeamMember [main] Validating email added or not**
+2024-09-01 23:07:13,016 INFO t.TC02_AddTeamMember [main] ***** TC02 Finished! *****
+2024-09-01 23:07:22,343 INFO t.TC03_verifyNameOnAddingOfDuplicateEmail [main] **** 3rd testCase started... ****
+2024-09-01 23:07:37,848 INFO t.TC03_verifyNameOnAddingOfDuplicateEmail [main] Validating if name is updated/lost on existing email-
+2024-09-01 23:07:37,891 INFO t.TC03_verifyNameOnAddingOfDuplicateEmail [main] * TC03 Finished! *
+2024-09-01 23:07:37,891 INFO t.TC03_verifyNameOnAddingOfDuplicateEmail [main] error:java.lang.AssertionError: expected [che3] but found [che32024.09.01.23.07.33]
+2024-09-01 23:07:37,891 INFO t.TC03_verifyNameOnAddingOfDuplicateEmail [main] *** TC03 Finished! ***
+2024-09-01 23:08:29,925 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\91865\eclipse-workspace\Temelio\testng.xml
+
+2024-09-01 23:08:38,654 INFO t.TC02_AddTeamMember [main] **** 2nd TestCase Started ****
+2024-09-01 23:08:49,168 INFO t.TC02_AddTeamMember [main] adding details of Member:
+2024-09-01 23:08:51,194 INFO t.TC02_AddTeamMember [main] Validating email added or not**
+2024-09-01 23:08:51,237 INFO t.TC02_AddTeamMember [main] ***** TC02 Finished! *****
+2024-09-01 23:09:00,874 INFO t.TC03_verifyNameOnAddingOfDuplicateEmail [main] **** 3rd testCase started... ****
+2024-09-01 23:09:15,661 INFO t.TC03_verifyNameOnAddingOfDuplicateEmail [main] Validating if name is updated/lost on existing email-
+2024-09-01 23:09:15,688 INFO t.TC03_verifyNameOnAddingOfDuplicateEmail [main] * TC03 Finished! *
+2024-09-01 23:09:15,688 INFO t.TC03_verifyNameOnAddingOfDuplicateEmail [main] error:java.lang.AssertionError: expected [che3] but found [che32024.09.01.23.09.11]

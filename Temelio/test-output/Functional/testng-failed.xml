@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AdminSettings(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC03_verifyNameOnAddingOfDuplicateEmail">
+        <methods>
+          <include name="tearDown"/>
+          <include name="test2"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC03_verifyNameOnAddingOfDuplicateEmail -->
+    </classes>
+  </test> <!-- AdminSettings(failed) -->
+</suite> <!-- Failed suite [Functional] -->
