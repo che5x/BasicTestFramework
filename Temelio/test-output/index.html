@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Functional" class="navigator-link ">
-                    <span>C:\Users\91865\eclipse-workspace\Temelio\testng.xml</span>
+                    <span>C:\Users\91865\git\BasicTestFramework\Temelio\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -120,6 +120,16 @@
                         <a href="#" panel-name="suite-Functional" title="testCases.TC02_AddTeamMember" class="method navigator-link" hash-for-method="addTeamMember">addTeamMember</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Functional" title="testCases.TC04_dummyTestCase" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Functional" title="testCases.TC01_LoginToBasePage" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Functional -->
                   </li>
                 </ul>
@@ -143,10 +153,10 @@
                   <a name="test2">
                   </a> <!-- test2 -->
                   <span class="method-name">test2</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at testCases.TC03_verifyNameOnAddingOfDuplicateEmail.test2(TC03_verifyNameOnAddingOfDuplicateEmail.java:45)
+                  <div class="stack-trace">java.lang.AssertionError: expected [che3] but found [che32024.09.03.00.06.39]
+	at testCases.TC03_verifyNameOnAddingOfDuplicateEmail.test2(TC03_verifyNameOnAddingOfDuplicateEmail.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -167,21 +177,56 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Functional-class-passed -->
+          <div class="suite-Functional-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC01_LoginToBasePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Functional-class-passed -->
+          <div class="suite-Functional-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC04_dummyTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Functional-class-passed -->
         </div> <!-- panel Functional -->
         <div panel-name="test-xml-Functional" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91865\eclipse-workspace\Temelio\testng.xml</span>
+            <span class="header-content">C:\Users\91865\git\BasicTestFramework\Temelio\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Functional&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;AdminSettings&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC01_LoginToBasePage&quot;/&gt;
       &lt;class name=&quot;testCases.TC02_AddTeamMember&quot;/&gt;
       &lt;class name=&quot;testCases.TC03_verifyNameOnAddingOfDuplicateEmail&quot;/&gt;
+      &lt;class name=&quot;testCases.TC04_dummyTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AdminSettings --&gt;
 &lt;/suite&gt; &lt;!-- Functional --&gt;
@@ -195,7 +240,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">AdminSettings (2 classes)</span>
+                <span class="test-name">AdminSettings (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,15 +266,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test2')
 data.setCell(0, 2, 'testCases.TC03_verifyNameOnAddingOfDuplicateEmail')
-data.setCell(0, 3, 14815);
+data.setCell(0, 3, 14525);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addTeamMember')
 data.setCell(1, 2, 'testCases.TC02_AddTeamMember')
-data.setCell(1, 3, 12594);
+data.setCell(1, 3, 12753);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'testCases.TC04_dummyTestCase')
+data.setCell(2, 3, 4);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'testCases.TC01_LoginToBasePage')
+data.setCell(3, 3, 3);
 window.suiteTableData['Functional']= { tableData: data, tableDiv: 'times-div-Functional'}
 return data;
 }
@@ -260,35 +313,65 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC02_AddTeamMember</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC01_LoginToBasePage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">addTeamMember</span>
-                <span class="method-start">8671 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">8741 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21269 ms</span>
+                <span class="method-start">8764 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_AddTeamMember</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">9035 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addTeamMember</span>
+                <span class="method-start">17029 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29783 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC03_verifyNameOnAddingOfDuplicateEmail</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">22044 ms</span>
+                <span class="method-start">30613 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test2</span>
-                <span class="method-start">30900 ms</span>
+                <span class="method-start">44208 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">45718 ms</span>
+                <span class="method-start">58897 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC04_dummyTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">59169 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">67338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67343 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

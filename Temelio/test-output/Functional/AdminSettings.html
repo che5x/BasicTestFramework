@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>AdminSettings</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 01 23:08:29 IST 2024</td>
+<td>Started on:</td><td>Tue Sep 03 00:05:44 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>46 seconds (46021 ms)</td>
+<tr><td>Total time:</td><td>67 seconds (67858 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,14 +77,18 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCases.TC03_verifyNameOnAddingOfDuplicateEmail.test2()'><b>test2</b><br>Test class: testCases.TC03_verifyNameOnAddingOfDuplicateEmail</td>
-<td><div><pre>java.lang.AssertionError: null
-	at testCases.TC03_verifyNameOnAddingOfDuplicateEmail.test2(TC03_verifyNameOnAddingOfDuplicateEmail.java:45)
+<td><div><pre>java.lang.AssertionError: expected [che3] but found [che32024.09.03.00.06.39]
+	at testCases.TC03_verifyNameOnAddingOfDuplicateEmail.test2(TC03_verifyNameOnAddingOfDuplicateEmail.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1273675500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1273675500'><pre>java.lang.AssertionError: null
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1948689480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1948689480'><pre>java.lang.AssertionError: expected [che3] but found [che32024.09.03.00.06.39]
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at testCases.TC03_verifyNameOnAddingOfDuplicateEmail.test2(TC03_verifyNameOnAddingOfDuplicateEmail.java:45)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at testCases.TC03_verifyNameOnAddingOfDuplicateEmail.test2(TC03_verifyNameOnAddingOfDuplicateEmail.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,7 +119,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>14</td>
-<td>testCases.TC03_verifyNameOnAddingOfDuplicateEmail@9635fa</td></tr>
+<td>testCases.TC03_verifyNameOnAddingOfDuplicateEmail@79e18e38</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -126,10 +130,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testCases.TC04_dummyTestCase.login()'><b>login</b><br>Test class: testCases.TC04_dummyTestCase</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC04_dummyTestCase@29a60c27</td></tr>
+<tr>
 <td title='testCases.TC02_AddTeamMember.addTeamMember()'><b>addTeamMember</b><br>Test class: testCases.TC02_AddTeamMember</td>
 <td></td>
 <td>12</td>
-<td>testCases.TC02_AddTeamMember@6c67e137</td></tr>
+<td>testCases.TC02_AddTeamMember@3e2822</td></tr>
+<tr>
+<td title='testCases.TC01_LoginToBasePage.login()'><b>login</b><br>Test class: testCases.TC01_LoginToBasePage</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC01_LoginToBasePage@6a62689d</td></tr>
 </table><p>
 </body>
 </html>

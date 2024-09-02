@@ -39,11 +39,13 @@ public class TC03_verifyNameOnAddingOfDuplicateEmail extends BaseClass {
 			// Validating if name is updated/lost on existing email
 			logger.info("Validating if name is updated/lost on existing email-");
 			Assert.assertEquals(ap.verifyName(), existingName);
-		} catch (AssertionError e) {
-			logger.info("* TC03 Finished! *");
-			logger.info("error:"+e);
-			org.testng.Assert.fail();
-		}catch (Exception e) {
+		} 
+//		catch (AssertionError e) {
+//			logger.info("* TC03 Finished! *");
+//			logger.info("error:"+e);
+//			org.testng.Assert.fail();
+//		}
+		catch (Exception e) {
 			logger.info("***** TC03 Finished! *****");
 			logger.error("Test Failed");
 			logger.debug("Debug logs..");

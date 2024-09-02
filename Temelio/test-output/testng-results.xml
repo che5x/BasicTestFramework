@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-01T23:08:29 IST" name="Functional" finished-at="2024-09-01T23:09:15 IST" duration-ms="46021">
+  <suite started-at="2024-09-03T00:05:44 IST" name="Functional" finished-at="2024-09-03T00:06:52 IST" duration-ms="67858">
     <groups>
     </groups>
-    <test started-at="2024-09-01T23:08:29 IST" name="AdminSettings" finished-at="2024-09-01T23:09:15 IST" duration-ms="46021">
+    <test started-at="2024-09-03T00:05:44 IST" name="AdminSettings" finished-at="2024-09-03T00:06:52 IST" duration-ms="67858">
       <class name="testCases.TC03_verifyNameOnAddingOfDuplicateEmail">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC03_verifyNameOnAddingOfDuplicateEmail@9635fa]" started-at="2024-09-01T23:08:52 IST" name="setup" finished-at="2024-09-01T23:09:00 IST" duration-ms="8853" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC03_verifyNameOnAddingOfDuplicateEmail@79e18e38]" started-at="2024-09-03T00:06:15 IST" name="setup" finished-at="2024-09-03T00:06:29 IST" duration-ms="13594" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,16 +18,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test2()[pri:3, instance:testCases.TC03_verifyNameOnAddingOfDuplicateEmail@9635fa]" started-at="2024-09-01T23:09:00 IST" name="test2" finished-at="2024-09-01T23:09:15 IST" duration-ms="14815" status="FAIL">
+        <test-method signature="test2()[pri:3, instance:testCases.TC03_verifyNameOnAddingOfDuplicateEmail@79e18e38]" started-at="2024-09-03T00:06:29 IST" name="test2" finished-at="2024-09-03T00:06:43 IST" duration-ms="14525" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[expected [che3] but found [che32024.09.03.00.06.39]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
+              <![CDATA[java.lang.AssertionError: expected [che3] but found [che32024.09.03.00.06.39]
 at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at testCases.TC03_verifyNameOnAddingOfDuplicateEmail.test2(TC03_verifyNameOnAddingOfDuplicateEmail.java:45)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testCases.TC03_verifyNameOnAddingOfDuplicateEmail.test2(TC03_verifyNameOnAddingOfDuplicateEmail.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,13 +66,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC03_verifyNameOnAddingOfDuplicateEmail@9635fa]" started-at="2024-09-01T23:09:15 IST" name="tearDown" finished-at="2024-09-01T23:09:15 IST" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC03_verifyNameOnAddingOfDuplicateEmail@79e18e38]" started-at="2024-09-03T00:06:44 IST" name="tearDown" finished-at="2024-09-03T00:06:44 IST" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC03_verifyNameOnAddingOfDuplicateEmail -->
-      <class name="testCases.TC02_AddTeamMember">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC02_AddTeamMember@6c67e137]" started-at="2024-09-01T23:08:29 IST" name="setup" finished-at="2024-09-01T23:08:38 IST" duration-ms="8662" status="PASS">
+      <class name="testCases.TC01_LoginToBasePage">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC01_LoginToBasePage@6a62689d]" started-at="2024-09-03T00:05:45 IST" name="setup" finished-at="2024-09-03T00:05:53 IST" duration-ms="8727" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,15 +83,57 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addTeamMember()[pri:2, instance:testCases.TC02_AddTeamMember@6c67e137]" started-at="2024-09-01T23:08:38 IST" name="addTeamMember" finished-at="2024-09-01T23:08:51 IST" duration-ms="12594" status="PASS">
+        <test-method signature="login()[pri:1, instance:testCases.TC01_LoginToBasePage@6a62689d]" started-at="2024-09-03T00:05:53 IST" name="login" finished-at="2024-09-03T00:05:53 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC01_LoginToBasePage@6a62689d]" started-at="2024-09-03T00:05:54 IST" name="tearDown" finished-at="2024-09-03T00:05:54 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC01_LoginToBasePage -->
+      <class name="testCases.TC02_AddTeamMember">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC02_AddTeamMember@3e2822]" started-at="2024-09-03T00:05:54 IST" name="setup" finished-at="2024-09-03T00:06:02 IST" duration-ms="7991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addTeamMember()[pri:2, instance:testCases.TC02_AddTeamMember@3e2822]" started-at="2024-09-03T00:06:02 IST" name="addTeamMember" finished-at="2024-09-03T00:06:15 IST" duration-ms="12753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addTeamMember -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC02_AddTeamMember@6c67e137]" started-at="2024-09-01T23:08:51 IST" name="tearDown" finished-at="2024-09-01T23:08:52 IST" duration-ms="773" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC02_AddTeamMember@3e2822]" started-at="2024-09-03T00:06:15 IST" name="tearDown" finished-at="2024-09-03T00:06:15 IST" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC02_AddTeamMember -->
+      <class name="testCases.TC04_dummyTestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC04_dummyTestCase@29a60c27]" started-at="2024-09-03T00:06:44 IST" name="setup" finished-at="2024-09-03T00:06:52 IST" duration-ms="8168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:5, instance:testCases.TC04_dummyTestCase@29a60c27]" started-at="2024-09-03T00:06:52 IST" name="login" finished-at="2024-09-03T00:06:52 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC04_dummyTestCase@29a60c27]" started-at="2024-09-03T00:06:52 IST" name="tearDown" finished-at="2024-09-03T00:06:52 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC04_dummyTestCase -->
     </test> <!-- AdminSettings -->
   </suite> <!-- Functional -->
 </testng-results>

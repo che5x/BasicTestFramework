@@ -26,9 +26,7 @@ public class DashboardPage extends BasePage{
 	}
 	
 	public void clickadminSettingsButton() {
-		System.out.println("adminSettingsButton:-"+adminSettingsButton);
 		adminSettingsButton.click();
-		System.out.println("admin button clicked");
 	}
 
 }
